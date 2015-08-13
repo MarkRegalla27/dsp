@@ -16,7 +16,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 2. touch: creates new file
 3. w and spacebar scrolls through files viewed by less command
 4. -i: ignores case of letter when searching within files using grep command
-5. 
+5. man [command]:  Gives help about the command following 'man' 
 
 ---
 
