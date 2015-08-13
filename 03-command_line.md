@@ -24,7 +24,10 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-ls lists the contents of a directory.
+ls: lists the contents of a directory.
+ls -a:
+ls -l: Lists the contents of a directory along with information regarding whether it is a directory or file, the date and time the file or directory was created, and the size of the file or directory.
+ls -lh:
 
 ---
 
