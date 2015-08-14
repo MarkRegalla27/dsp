@@ -17,6 +17,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 3. w and spacebar scrolls through files viewed by less command
 4. -i: ignores case of letter when searching within files using grep command
 5. man [command]:  Gives help about the command following 'man' 
+6. apropos: (Very worth remembering) Suggests relevant commands if you forget the name but know what it does
+7. 
 
 ---
 
