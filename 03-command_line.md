@@ -30,7 +30,7 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 ls: Lists the files and folders in a directory.
 ls -a: Lists all files and folders in given directory, even hidden ones
 ls -l: Lists the contents of a directory along with information regarding whether it is a directory or file, the date and time the file or directory was created, and the size of the file or directory.
-ls -lh: Lists the same details as ls -l but in human readable form
+ls -lh: Lists the same details as ls -l but in human readable form (adds units to the size of files/folders)
 
 ---
 
