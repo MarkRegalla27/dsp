@@ -39,7 +39,7 @@ ls -lh: Lists the same details as ls -l but in human readable form (adds units t
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+xargs allows for performing multiple commands in a single statement.
 
 ---
 
