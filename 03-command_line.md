@@ -14,12 +14,14 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 1. -r: 
 2. touch: Creates new file.  Give it the extension of your choosing.
-3. w and spacebar scrolls through files viewed by less command
+3. less: view contents of file. w and spacebar scrolls through file
 4. -i: ignores case of letter when searching within files using grep command
 5. man [command]:  Gives help about the command following 'man' 
 6. apropos: (Very worth remembering) Suggests relevant commands if you forget the name but know what it does
 7. cat: Stream contents of a file in the current directory as output on the command line
-8. 
+8. open '/file': This command is not listed in the command line crash course.  I found it by trying it.  And it works.  It opens the file.  Pretty self-explanatory.
+9. grep: Searches for specified contents in chosen file
+10. 
 
 ---
 
@@ -40,7 +42,7 @@ ls -lh: Lists the same details as ls -l but in human readable form (adds units t
 
 What does `xargs` do? Give an example of how to use it.
 
-xargs allows for performing multiple commands in a single statement.  It takes the output of the first command as an argument which it passes to the second command (placed after xargs).  (Note: the default command if none is specified after xargs is echo.)
+xargs allows for performing multiple commands in a single statement and loop over multiple objects in the directory.  It takes the output of the first command as an argument which it passes to the second command (placed after xargs).  (Note: the default command if none is specified after xargs is echo.)
 
 ---
 
