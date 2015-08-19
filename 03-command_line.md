@@ -22,6 +22,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 8. open '/file': This command is not listed in the command line crash course.  I found it by trying it.  And it works.  It opens the file.  Pretty self-explanatory.
 9. grep: Searches for specified contents in chosen file
 10. pushd:  Saves the current directory that you are in and changes to a new one temporarily
+11. -i: ignores case of letter when searching within files using grep command
 
 ---
 
