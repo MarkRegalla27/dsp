@@ -12,7 +12,7 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-1. -r: 
+1. pipe |: Sits between two commands.  The output from the first command gets channelled into the command to the second command.
 2. touch: Creates new file.  Give it the extension of your choosing.
 3. less: view contents of file. w and spacebar scrolls through file
 4. -i: ignores case of letter when searching within files using grep command
@@ -42,7 +42,7 @@ ls -lh: Lists the same details as ls -l but in human readable form (adds units t
 
 What does `xargs` do? Give an example of how to use it.
 
-xargs allows for performing multiple commands in a single statement and loop over multiple objects in the directory.  It takes the output of the first command as an argument which it passes to the second command (placed after xargs).  (Note: the default command if none is specified after xargs is echo.)
+xargs allows for performing multiple commands in a single statement and loop over multiple objects in the directory.  It takes the output of the first command as an argument which it passes to the second command (placed after xargs, called the utility command).  (Note: the default command if none is specified after xargs is echo.)
 
 ---
 
