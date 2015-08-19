@@ -21,7 +21,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 7. cat: Stream contents of a file in the current directory as output on the command line
 8. open '/file': This command is not listed in the command line crash course.  I found it by trying it.  And it works.  It opens the file.  Pretty self-explanatory.
 9. grep: Searches for specified contents in chosen file
-10. 
+10. pushd:  Saves the current directory that you are in and changes to a new one temporarily
 
 ---
 
