@@ -15,7 +15,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 1. pipe |: Sits between two commands.  The output from the first command gets channelled into the command of the second command.
 2. touch: Creates new file.  Give it the extension of your choosing.
 3. less: view contents of file. w and spacebar scrolls through file
-4. -i: ignores case of letter when searching within files using grep command
+>>: Append command.  Appends the command to the left of the sign to the command or file to the right of the sign.
 5. man [command]:  Gives help about the command following 'man' 
 6. apropos: (Very worth remembering) Suggests relevant commands if you forget the name but know what it does
 7. cat: Stream contents of a file in the current directory as output on the command line
