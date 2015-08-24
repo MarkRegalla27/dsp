@@ -34,7 +34,7 @@ As the values of a set must be hashable, items can be found faster.  The hash fu
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+A lambda is a function that is not bound to a name.  It can be written in 1 line for compactness.  Also, a return statement is not needed as lambda always returns a value
 
 ---
 
