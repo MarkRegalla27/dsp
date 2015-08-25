@@ -34,7 +34,26 @@ As the values of a set must be hashable, items can be found faster.  The hash fu
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
-A lambda is a function that is not bound to a name.  It can be written in 1 line for compactness yet perform an operation on a large amount of data (looping over it without for or while).  Also, a return statement is not needed as lambda always returns a value
+A lambda is a function that is not bound to a name.  It can be written in 1 line for compactness yet perform an operation on a large amount of data (looping over it without for or while).  Also, a return statement is not needed as lambda always returns a value.
+
+An example of the use of a lambda function:
+
+x = ['1%', '2%', '3%', '4%', '5%']
+x = map(lambda x: int(x.rstrip("%")), x)
+x = [1, 2, 3, 4, 5]
+#stips the '%' sign from each entry and converts the data to an integer data type
+
+Lambda functions can be used in Python's sorted function as the key.  The key argument takes a function which acts on all elements of the list.  Here is an example that sorts mult-tiered data:
+
+emp_tuples = [
+        ('John', 'Sales', 45000),
+        ('Jane', 'HR', 62000),
+        ('Dave', 'Exec', 90000),
+]
+>>> sorted(emp_tuples, key=lambda employee: employee[2])   # sort by salary
+[('Dave', 'Exec', 90000), ('Jane', 'HR', 62000), ('John', 'Sales', 45000)]
+
+(https://wiki.python.org/moin/HowTo/Sorting)
 
 ---
 
@@ -42,7 +61,12 @@ A lambda is a function that is not bound to a name.  It can be written in 1 line
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+A list comprehension is enclosed in brackets [] and generates a list of data using the function inside.  This helps cut down on the tedious task of typing in every number you need.  For instance, to generate a list of a few numbers counting by two, the list comprehension can be written:
+
+theList = [2*x for x in range(10)]
+print theList
+>>>[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
+
 
 ---
 
