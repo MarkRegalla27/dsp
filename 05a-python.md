@@ -37,12 +37,12 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 A lambda is a function that is not bound to a name.  It can be written in 1 line for compactness yet perform an operation on a large amount of data (looping over it without for or while).  Also, a return statement is not needed as lambda always returns a value.
 
 An example of the use of a lambda function:
-
+```
 x = ['1%', '2%', '3%', '4%', '5%']
 x = map(lambda x: int(x.rstrip("%")), x)
 x = [1, 2, 3, 4, 5]
 #stips the '%' sign from each entry and converts the data to an integer data type
-
+```
 Lambda functions can be used in Python's sorted function as the key.  The key argument takes a function which acts on all elements of the list.  Here is an example that sorts mult-tiered data:
 
 emp_tuples = [
