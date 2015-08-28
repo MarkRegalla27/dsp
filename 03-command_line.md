@@ -47,13 +47,14 @@ What does `xargs` do? Give an example of how to use it.
 xargs allows for performing multiple commands in a single statement and loop over multiple objects in the directory.  It takes the output of the first command as an argument which it passes to the second command (placed after xargs, called the utility command).  (Note: the default command if none is specified after xargs is echo.)
 
 An example of a usage of xargs:
+```
 The command "seq 5 | xargs -n1 echo "Banana Count:"" prints the words "Banana Count" over the number of times the sequence command prints.  Here is the output:
 Banana Count: 1
 Banana Count: 2
 Banana Count: 3
 Banana Count: 4
 Banana Count: 5
-
+```
 This is just a rough example that falls short of demonstrating the full power of xargs.  I still need to get more practice with it.
 
 ---
