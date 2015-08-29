@@ -23,6 +23,10 @@ Make sure that you know at least one of these well enough to do basic editing in
 
 You should know at least enough vim to be able to get out of it, because it is the default on many systems and you might find yourself in it even if you didn't mean to be.
 
+*How to get out of vim*
+Type :q! then press enter (be sure to physically type the colon ":").  
+This discards any changes that you have made and returns you to the terminal window.
+
 If you intend to use a graphical editor that doesn't run in a terminal, nano might be a good choice for you because it is very simple.
 
 Both Emacs and vim have built-in interactive tutorials that you can try.
