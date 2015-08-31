@@ -26,6 +26,7 @@ def donuts(count):
     raise NotImplementedError
 
 
+s = raw_input('Enter a string: )
 def both_ends(s):
     """
     Given a string s, return a string made of the first 2 and the last
@@ -42,9 +43,14 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s) < 2:
+        print ' '
+    else:
+        newString = s[0:2] + s[-2:-1] + s[-1]
+        print newString
     raise NotImplementedError
 
-
+s = raw_input('Enter string: ')
 def fix_start(s):
     """
     Given a string s, return a string where all occurences of its
@@ -61,6 +67,15 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    for i in s:
+        if counter > 0:
+            if s[counter] == s[0]:
+                newString = newString + '*'
+            else:
+                newString = newString + s[counter]
+        else:
+            newString = s[counter]
+        counter += 1
     raise NotImplementedError
 
 
