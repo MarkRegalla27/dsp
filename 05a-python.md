@@ -61,12 +61,14 @@ emp_tuples = [
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
-A list comprehension is enclosed in brackets [] and generates a list of data using the function inside.  This helps cut down on the tedious task of typing in every number you need.  For instance, to generate a list of a few numbers counting by two, the list comprehension can be written:
+A list comprehension is enclosed in brackets [] and generates a list of data by means of the function inside.  This helps cut down on the tedious task of typing in every piece of data into the list.  For instance, to generate a list of a few numbers counting by two, the list comprehension can be written:
 ```
 theList = [2*x for x in range(10)]
 print theList
 >>>[0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
 ```
+An equivalent expression using the 'map' function is:
+
 
 ---
 
@@ -81,23 +83,38 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+```
+date_start_date = datetime.strptime(date_start, '%m-%d-%Y')     #m, d, Y in place for month, day, year
+date_stop_date = datetime.strptime(date_stop, '%m-%d-%Y')       #be sure to have '-' between %m, %d, and %Y as the strings
+diff = date_stop_date - date_start_date                         #above contain them
+print diff
+>>> 937 days, 0:00:00
+```
 
 b.  
 ```
 date_start = '12312013'  
 date_stop = '05282015'  
 ```
+```
+date_start_stamp = datetime.fromtimestamp(int(date_start))
+date_stop_stamp = datetime.fromtimestamp(int(date_stop))
+print date_stop_stamp - date_start_stamp
+>>> -82 days, 14:13:22
+```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
 
 c.  
 ```
 date_start = '15-Jan-1994'      
 date_stop = '14-Jul-2015'  
 ```
-
->> REPLACE THIS TEXT WITH YOUR RESPONSE  
+```
+date_start_script = datetime.strptime(date_start, '%d-%b-%Y')
+date_stop_script = datetime.strptime(date_stop, '%d-%b-%Y')
+print date_stop_script - date_start_script
+>>> 7850 days, 0:00:00
+ 
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
