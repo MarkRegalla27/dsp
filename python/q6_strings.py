@@ -1,7 +1,8 @@
 # Based on materials copyright 2010 Google Inc.
 # Licensed under the Apache License, Version 2.0
 
-
+count = raw_input('Enter Number of Donuts: ')
+count = int(count)
 def donuts(count):
     """
     Given an int count of a number of donuts, return a string of the
@@ -18,6 +19,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count < 10:
+        print 'Number of donuts: ' + str(count)
+    if count >= 10:
+        print 'Number of donuts: many'
     raise NotImplementedError
 
 
