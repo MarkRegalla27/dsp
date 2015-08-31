@@ -46,7 +46,7 @@ def both_ends(s):
     if len(s) < 2:
         print ' '
     else:
-        newString = s[0:2] + s[-2:-1] + s[-1]
+        newString = s[0:2] + s[-2:]
         print newString
     raise NotImplementedError
 
@@ -78,7 +78,8 @@ def fix_start(s):
         counter += 1
     raise NotImplementedError
 
-
+a = raw_input('Enter first word: )
+b = raw_input('Enter second word: )
 def mix_up(a, b):
     """
     Given strings a and b, return a single string with a and b
@@ -94,9 +95,12 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+        newa = b[0:2] + a[2:]
+        newb = a[0:2] + b[2:]
+        print newa + ' ' + newb
     raise NotImplementedError
 
-
+s = raw_input('Enter string: ')
 def verbing(s):
     """
     Given a string, if its length is at least 3, add 'ing' to its end.
@@ -111,9 +115,20 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    def verbing(s):
+        if len(s) >= 3:
+            if s[-3:] == 'ing':
+                s = s + 'ly'
+                print s
+            else:
+                s = s + 'ing'
+                print s
+        else:
+            print s
+
     raise NotImplementedError
 
-
+s = 'This movie is Not that bAd after all'
 def not_bad(s):
     """
     Given a string, find the first appearance of the substring 'not'
@@ -131,6 +146,11 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    notIndex = s.lower().find('not'.lower())
+    badIndex = s.lower().find('bad'.lower())
+    newS = s[:notIndex] + 'good' + s[badIndex + 3:]
+    print newS
+
     raise NotImplementedError
 
 
