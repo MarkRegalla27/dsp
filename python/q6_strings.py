@@ -146,14 +146,15 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    notIndex = s.lower().find('not'.lower())
-    badIndex = s.lower().find('bad'.lower())
+    notIndex = s.lower().find('not'.lower())        #use .lower() to make search for 'not' and 'bad'
+    badIndex = s.lower().find('bad'.lower())        #strings case insensitive
     newS = s[:notIndex] + 'good' + s[badIndex + 3:]
     print newS
 
     raise NotImplementedError
 
-
+a = 'abcd'
+b = 'efghi'
 def front_back(a, b):
     """
     Consider dividing a string into two halves. If the length is even,
@@ -170,4 +171,6 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    newString = a[:(len(a)/2)+(len(a)%2)] + b[:(len(b)/2)+(len(b)%2)] + a[(len(a)/2)+(len(a)%2):] + b[(len(b)/2)+(len(b)%2):]
+    print newString
     raise NotImplementedError
