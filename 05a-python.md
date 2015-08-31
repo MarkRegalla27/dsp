@@ -114,7 +114,7 @@ date_start_script = datetime.strptime(date_start, '%d-%b-%Y')
 date_stop_script = datetime.strptime(date_stop, '%d-%b-%Y')
 print date_stop_script - date_start_script
 >>> 7850 days, 0:00:00
- 
+``` 
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
