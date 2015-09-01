@@ -40,13 +40,13 @@ def front_x(words):
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
     count = -1
-        t = []
-        for i in words:
-            count += 1
-            if i[:1] == 'x':
-                t.append(i)
-                del words[count]
-        print sorted(t) + sorted(words)
+    t = []
+    for i in words:
+        count += 1
+        if i[:1] == 'x':
+            t.append(i)
+            del words[count]
+    print sorted(t) + sorted(words)
     
     raise NotImplementedError
 
