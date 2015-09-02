@@ -41,12 +41,14 @@ def front_x(words):
     """
     count = -1
     t = []
+    r = []
     for i in words:
         count += 1
         if i[:1] == 'x':
             t.append(i)
-            del words[count]
-    print sorted(t) + sorted(words)
+         if i[0] != 'x':
+            r.append(i)
+    print sorted(t) + sorted(r)
     
     raise NotImplementedError
 
