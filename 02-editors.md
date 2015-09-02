@@ -35,7 +35,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+At the point of this commit, I plan to use vim as my editor.  It runs right out of the terminal window on my Mac, and makes viewing the files with my saved code easy.  I messed with Emacs and it was not very intuitive on showing how to open and view files.  I may have not put enough time into it, as I am sure I could figure it out someday.  I also have not gotten the nano application to run.  I downloaded it, but probably did not put enough effort yet into getting it to work.
 
 ---
 
@@ -65,6 +65,10 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+I plan to use Sublime, as I have previous experience with it.  Once you save a file as .py, Sublime recognizes it will be used for Python code, and keeps formatting consistent with standard Python programming.  For instance, when you type a colon at the end of an 'if' statement and press return, Sublime will automatically indent the next line.  
+
+I set the background color to white as it is easier to read.  Some useful shortcuts include the standart ctrl-c, -x, -v for copy, cut, and paste, respectively.  Also, you can hold control and put the cursor in mutiple places and type or delete text in all of the places where you put the cursor.
+
+I have also played with Sypder, the full IDE. I may use that when I have an need to stop a program at a specific spot and find what the program has calculated up to that point.
 
 ---
