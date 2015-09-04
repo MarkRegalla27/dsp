@@ -101,6 +101,15 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
+    t = []
+    while count < (len(s) - 1):
+        if s[count] != s[count + 1]:
+            t.append(s[count])
+            count += 1
+    if s[len(s) - 1] != t[len(t) - 1]:
+        t.append(s[len(s) - 1])
+    print t
+
     raise NotImplementedError
 
 
