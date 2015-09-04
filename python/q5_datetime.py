@@ -14,6 +14,16 @@ print diff
 date_start = '12312013'  
 date_stop = '05282015'  
 
+date_start_stamp = datetime.fromtimestamp(int(date_start))
+date_stop_stamp = datetime.fromtimestamp(int(date_stop))
+print date_stop_stamp - date_start_stamp
+>>> -82 days, 14:13:22
+
 ####c)  
 date_start = '15-Jan-1994'  
 date_stop = '14-Jul-2015'  
+ 
+date_start_script = datetime.strptime(date_start, '%d-%b-%Y')
+date_stop_script = datetime.strptime(date_stop, '%d-%b-%Y')
+print date_stop_script - date_start_script
+>>> 7850 days, 0:00:00
