@@ -49,16 +49,37 @@ In the theoretical world, all data related to an experiment or a scientific prob
 Bayes' Theorem is an important tool in understanding what we really know, given evidence of other information we have, in a quantitative way.  It helps incorporate conditional probabilities into our conclusions.
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
+```
+Let A = Whether a twin exists
+Let B = Whether an identical twin exists
+p(A) = 1 (since we are told a twin existed)
+p(B) = ? (it's what we are solving for)
+p(B|A) = 2/7 (the probability an identical twin exists, given a twin exists.  The probability of an
+identical twin is 1/125 and the total probability of either twin existing is 1/125 + 1/300.  Thus
+the probability of an identical twin exists given a twin exists is (1/125) / (1/125 + 1/300) = 2/7
+p(A|B) = 1 (the probability a twin exists, given an identical twin exists.  If there was an identical
+twin, then there obviously was a twin)
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Using Bayes' Theorem:
+p(A|B) = p(A)p(B|A) / p(B)
+Rearranging for p(B) gives:
+p(B) = p(A)p(B|A) / p(A|B)
+Plugging and chugging:
+p(B) = 1 * 2/7 / 1
+p(B) = 2/7
+
+There is a 2/7 chance that Elvis's twin brother was an identical twin.  Imagine what a ruckus two equal hip-shakers
+would have caused.
+```
 
 ---
 
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
-
->> REPLACE THIS TEXT WITH YOUR RESPONSE
-
+```
+The frequentist statistical technique collects data under fixed conditions and measures the relative outcome only.
+The Bayesian statisical techique allows for an intial hypothesis which is adjusted based upon actucal data.
+```
 ---
 
 ###Optional Exercises
