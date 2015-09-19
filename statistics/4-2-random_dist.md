@@ -21,7 +21,7 @@ thinkplot.Show(xlabel='Number', ylabel='PMF')
 cdf = thinkstats2.Cdf(randset, label='Random Nos. CDF')
 thinkplot.Pmfs([cdf])
 thinkplot.Show(xlabel='Number', ylabel='CDF')
-'''
+```
 
 Above code works.  I cannot seem to figure out how to get the images it produces on 
 Github
